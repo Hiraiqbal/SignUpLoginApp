@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet,View, Text, Button, TouchableWithoutFeedback, TextInput,Image} from 'react-native';
+import { StyleSheet,View, Text, Button, TouchableWithoutFeedback, TextInput,Image, Keyboard} from 'react-native';
 import Colors from '../Constants/Colors';
 import Input from '../Components/Input';
 import Logos from'../Components/Logos';
@@ -8,6 +8,7 @@ import { Entypo } from '@expo/vector-icons';
 const LoginScreen =props=>{
     return(
         <TouchableWithoutFeedback onPress={()=>{
+            Keyboard.dismiss();
         }}>
         <View style={styles.screen} >
             <Text style={styles.title} >Welcome Back </Text> 
